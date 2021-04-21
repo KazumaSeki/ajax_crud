@@ -1,0 +1,3 @@
+document.getElementById('post-<%= @post.id %>').innerHTML = '<%= j(render @post) %>'
+var form = document.getElementsByTagName('form')[0]
+form.outerHTML = '<%= j(render 'form', post: Post.new, value: '更新') %>'
